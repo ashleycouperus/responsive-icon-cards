@@ -22,26 +22,35 @@ h1 {
 }
 
 .cards {
-
-}
-
-.card {
-
-}
-
-.card-body {
-
+  max-width: 25em;
+  list-style-type: none;
 }
 
 .card-img {
   width: 50px;
-  position: absolute;
+  position: relative;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 @media only screen and (min-width: 25em) {
 
-  
+  .cards {
+    max-width: 30em;
+  }
+
+  .card-img {
+    left: 0%;
+    transform: translateX(-0%);
+  }
+
+  .card-body {
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    transform: translateX(-5%);
+  }
+
 
 }
 
